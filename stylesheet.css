@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -58,6 +59,19 @@ button {
 
 button:hover {
     background-color: rgba(92, 126, 99, 0);
+}
+
+h1 {
+    color: #9b4d2b6e;
+    text-align: center;
+}
+
+p {
+    color: #3636366e;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
 }
 
 /* KEYFRAMES */
