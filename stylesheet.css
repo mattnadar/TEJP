@@ -25,9 +25,11 @@ header {
     
 }
 
-.logo {
+header .logo {
     cursor: pointer;
     margin-right: auto;
+    width: 1px; /* Add this line */
+    height: auto; /* Add this line */
 }
 
 .nav_links {
@@ -180,3 +182,14 @@ div.info {
     animation-fill-mode: none;
 }
 
+/* MEDIA FORMATTING */
+
+@media (max-width: 767px) {
+
+    header .logo{
+        cursor: pointer;
+        margin-right: auto;
+        width: 100px; /* Adjust the width as per your preference */
+        height: auto; /* Ensure proportional scaling */
+    }
+}
