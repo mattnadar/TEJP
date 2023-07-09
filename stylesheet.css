@@ -87,6 +87,10 @@ p {
     max-width: 500px;
 }
 
+p a:hover {
+    color: #9ab28a;
+}
+
 div.definition {
     color: rgb(84, 42, 0);
     margin: auto;
