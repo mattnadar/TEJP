@@ -27,13 +27,12 @@ header {
 
 header .logo {
     cursor: pointer;
-    margin-right: auto;
-    width: 1px; 
-    height: auto; 
+    margin-right: none;
 }
 
 .nav_links {
     list-style: none;
+    
 }
 
 .nav_links li {
@@ -133,6 +132,46 @@ div.info {
     animation-fill-mode: none;
 }
 
+
+div.bio {
+    background-color: #9ab28a;
+    border-radius: 25px;
+    border: 2px solid rgb(84, 42, 0);
+    height: 600px;
+    width: 400px;
+    text-align: center;
+    padding-top: 10px;
+    padding: 10px;
+    margin: 30px;
+}
+
+div.image-container {
+    margin-top: 5px;
+    background-color: #9ab28a;
+
+}
+
+img {
+    border-radius: 25px;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: fade-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+body {
+    margin: 50px;
+}
+
 /* KEYFRAMES */
 
 @keyframes fadeIn {
@@ -184,14 +223,13 @@ div.info {
     animation-fill-mode: none;
 }
 
-/* MEDIA FORMATTING */
+/* MEDIA FORMATTING 
 
 @media (max-width: 767px) {
 
     header .logo{
         cursor: pointer;
         margin-right: auto;
-        width: 100px; /* Adjust the width as per your preference */
-        height: auto; /* Ensure proportional scaling */
-    }
-}
+        width: 100px;
+        height: auto; 
+} */
