@@ -13,7 +13,7 @@ li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 16px;
-    color: #9b4d2b6e;
+    color: #b35933;
     text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ button:hover {
 }
 
 h1 {
-    color: #9b4d2b6e;
+    color: #b35933;
     text-align: center;
     animation-name: fade-up;
     animation-duration: 1s;
