@@ -103,9 +103,30 @@ p {
     max-width: 500px;
 }
 
+p a {
+    position: relative;
+}
+
 p a:hover {
     color: #9ab28a;
 }
+
+p a:hover:before {
+    background-color: #9ab28a;
+    width: 100%;
+}
+
+p a:before {
+    content: '';
+    position: absolute; 
+    width: 0%;
+    height: 2px; 
+    bottom: -2px; 
+    left: 0; 
+    background-color: transparent; 
+    transition: all 0.3s ease 0s; 
+}
+
 
 div.definition {
     color: rgb(84, 42, 0);
