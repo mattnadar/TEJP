@@ -44,6 +44,7 @@ header .logo {
 .nav_links li a {
     transition: all 0.3 ease 0s;
     position: relative;
+    transition: color 1s;
 }
 
 .nav_links li a:before {
