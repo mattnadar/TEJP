@@ -43,12 +43,27 @@ header .logo {
 
 .nav_links li a {
     transition: all 0.3 ease 0s;
+    position: relative; /* Add this line */
+}
 
+.nav_links li a:before {
+    content: ''; /* Add this line */
+    position: absolute; /* Add this line */
+    width: 0%; /* Add this line */
+    height: 2px; /* Customize the underline height */
+    bottom: -2px; /* Position the underline at the bottom */
+    left: 0; /* Add this line */
+    background-color: transparent; /* Set the initial underline color */
+    transition: all 0.3s ease 0s; /* Add this line */
 }
 
 .nav_links li a:hover {
     color: #9ab28a;
-    
+}
+
+.nav_links li a:hover:before {
+    background-color: #9ab28a; /* Customize the underline color */
+    width: 100%;
 }
 
 button {

@@ -42,11 +42,32 @@ header .logo {
 
 .nav_links li a {
     transition: all 0.3 ease 0s;
-
+    position: relative;
 }
 
 .nav_links li a:hover {
     color: #9ab28a;
+}
+
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+    position: relative;
+}
+
+.nav_links li a:before {
+    content: '';
+    position: absolute; 
+    width: 0%;
+    height: 2px; 
+    bottom: -2px; 
+    left: 0; 
+    background-color: transparent; 
+    transition: all 0.3s ease 0s; 
+}
+
+.nav_links li a:hover:before {
+    background-color: #9ab28a;
+    width: 100%;
 }
 
 button {
