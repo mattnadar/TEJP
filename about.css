@@ -32,11 +32,19 @@ header .logo {
     height: auto; /* Add this line */
 }
 
+@media (max-width: 1000px) {
+    img.heading-1 {
+        display: none; /* Hide the logo when window gets too small */
+        
+    }
+}
+
 .nav_links {
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-left: -17%;
 }
 
 .nav_links li {

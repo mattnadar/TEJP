@@ -27,9 +27,15 @@ header {
 
 header .logo {
     cursor: pointer;
-    margin-right: auto;
-    width: 1px; 
+    margin-right: 20px; 
     height: auto; 
+}
+
+@media (max-width: 1000px) {
+    img.heading-1 {
+        display: none; /* Hide the logo when window gets too small */
+        
+    }
 }
 
 .nav_links {
@@ -37,6 +43,7 @@ header .logo {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-left: -17%;
 }
 
 .nav_links li {
