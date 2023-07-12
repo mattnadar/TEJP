@@ -101,7 +101,8 @@ button {
 }
 
 button:hover {
-    background-color: rgba(92, 126, 99, 0);
+    /*background-color: rgba(92, 126, 99, 0);*/
+    background-color: #9ab28a;
 }
 
 /* Button Page */
