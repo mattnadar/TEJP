@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Global Styles */
+
 * {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
@@ -9,13 +11,7 @@
 
 }
 
-li, a, button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    color: #b35933;
-    text-decoration: none;
-}
+/* Header */
 
 header {
     display: flex;
@@ -37,6 +33,9 @@ header .logo {
         
     }
 }
+
+/* Nav Links */
+
 
 .nav_links {
     list-style: none;
@@ -80,6 +79,16 @@ header .logo {
     width: 100%;
 }
 
+/* Button */
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #b35933;
+    text-decoration: none;
+}
+
 button {
     margin: right auto;
     padding: 9px 25px;
@@ -94,17 +103,24 @@ button:hover {
     background-color: rgba(92, 126, 99, 0);
 }
 
+/* Heading */
+
 h1 {
     color: #b35933;
     text-align: center;
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+    animation: fade-up 1s ease-in;
 }
+
+.heading-1 {
+    animation: fade-down 1s ease-in;
+}
+
+.heading-2 {
+    animation: fade-up 1s ease-in;
+}
+
+
+/* Image Container */
 
 div.image-container {
     margin-top: 5px;
@@ -122,18 +138,14 @@ div.image-container {
     display: flex;
     width: 100%;
     justify-content: center;
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+    animation: fade-up 1s ease-in;
 }
 
 img {
     border-radius: 25px;
 }
+
+/* Paragraph */
 
 p {
     /**display: flex;*/
@@ -168,6 +180,7 @@ p a:before {
     transition: all 0.3s ease 0s; 
 }
 
+/* Definition */
 
 div.definition {
     color: rgb(84, 42, 0);
@@ -181,19 +194,11 @@ div.definition {
     background-color: #9ab28a;
     display: flex;
     text-align: center;
-
-    /* animation */
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+    animation: fade-up 1s ease-in;
     
 }
 
-
+/* Info */
 
 div.info {
     margin: auto;
@@ -206,14 +211,7 @@ div.info {
     font-family: "Montserrat", sans-serif;
     display: flex;
     text-align: center;
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    margin-bottom: 50px;
+    animation: fade-up 1s ease-in;
 }
 
 /* KEYFRAMES */
@@ -247,25 +245,6 @@ div.info {
     }
 }
 
-.heading-1 {
-    animation-name: fade-down;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-}
-
-.heading-2 {
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-}
 
 /* MEDIA FORMATTING */
 
