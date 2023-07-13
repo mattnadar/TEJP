@@ -35,12 +35,14 @@ header .logo {
 
 /* Nav Bar */
 
-.nav_links {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: -17%;
+@media screen and (min-width: 1000px) { /* Making it so this nav bar is only on desktop */
+    .nav_links {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        /*margin-left: -17%;*/
+    }
 }
 
 .nav_links li {
@@ -221,13 +223,73 @@ body {
 }
 
 
-/* MEDIA FORMATTING 
+/* MEDIA FORMATTING */
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
-    header .logo{
-        cursor: pointer;
-        margin-right: auto;
-        width: 100px;
-        height: auto; 
-} */
+    * {
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #f3d7a8 ;
+    
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_links {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_links li {
+        display: block;
+        padding: 10px 0;
+        white-space: nowrap;
+        
+    }
+
+    .nav_links li a {
+        transition: all 0.3 ease 0s;
+        position: relative;
+        transition: color 1s;
+        font-size: 12px;
+        padding: 15px;
+
+    }
+    
+    button {
+        display: none;
+    }
+
+    h1 {
+        white-space: nowrap; 
+    }
+    
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    div.bio {
+        height: 450px;
+    }
+
+    div.image-container {
+        width: 325px;
+        height: 250px;
+    }
+
+    
+
+    p {
+        text-align: center;
+    }
+}

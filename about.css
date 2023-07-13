@@ -51,12 +51,14 @@ footer {
 }
 /* Nav Bar */
 
-.nav_links {
-    list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: -17%;
+@media screen and (min-width: 1000px){ /* Making it so this nav bar is only on desktop */
+    .nav_links {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        /*margin-left: -17%;*/
+    }
 }
 
 .nav_links li {
@@ -311,12 +313,91 @@ div.info3 {
 
 /* MEDIA FORMATTING */
 
-@media (max-width: 767px) {
+/* Mobile Formatting */
 
-    header .logo{
-        cursor: pointer;
-        margin-right: auto;
-        width: 100px; /* Adjust the width as per your preference */
-        height: auto; /* Ensure proportional scaling */
+@media only screen and (max-width: 767px) {
+
+    * {
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #f3d7a8 ;
+    
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_links {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav_links li a {
+        transition: all 0.3 ease 0s;
+        position: relative;
+        transition: color 1s;
+        font-size: 12px;
+        padding: 15px;
+
+    }
+    
+    button {
+        display: none;
+    }
+
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    div.image-container {
+        width: 325px;
+        height: 250px;
+    }
+
+    div.info {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    div.info2 {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    div.info3 {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    div.definition {
+        margin: auto;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    p {
+        text-align: center;
     }
 }

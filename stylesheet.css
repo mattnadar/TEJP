@@ -140,6 +140,8 @@ h1 {
     color: #b35933;
     text-align: center;
     animation: fade-up 1s ease-in;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 .heading-1 {
