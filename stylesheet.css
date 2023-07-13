@@ -277,14 +277,55 @@ div.info {
 }
 
 
-/* MEDIA FORMATTING */
+/* Mobile Formatting */
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
-    header .logo{
-        cursor: pointer;
-        margin-right: auto;
-        width: 100px; /* Adjust the width as per your preference */
-        height: auto; /* Ensure proportional scaling */
+    header {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .nav_links {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .nav_links li a {
+        transition: all 0.3 ease 0s;
+        position: relative;
+        transition: color 1s;
+        font-size: 10px;
+        justify-content: center;
+    }
+    
+    button {
+        display: none;
+    }
+
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    div.image-container {
+        width: 325px;
+        height: 250px;
+    }
+
+    div.info {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    p {
+        text-align: center;
     }
 }
