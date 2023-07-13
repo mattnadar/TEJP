@@ -269,9 +269,19 @@ body {
     }
 
     h1 {
-        white-space: nowrap; 
+        color: #b35933;
+        text-align: center;
+        animation: fade-up 1s ease-in;
+        white-space: nowrap; /* Add this line to prevent line break */
+        margin-bottom: 20px; /* Adjust margin-bottom as needed */
     }
     
+    .heading-2 {
+        color: #b35933;
+        text-align: center;
+        animation: fade-up 1s ease-in;
+        font-size: 30px;
+    }
 
     img {
         width: 250px;
