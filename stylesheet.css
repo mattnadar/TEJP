@@ -101,7 +101,8 @@ button {
 }
 
 button:hover {
-    /*background-color: rgba(92, 126, 99, 0);*/
+    background-color: rgba(92, 126, 99, 0);
+    transition: color 1s;
     background-color: #9ab28a;
 }
 
@@ -122,6 +123,11 @@ button:hover {
     display: block;
     padding: 5px;
   }
+
+  .contact-menu a:hover {
+    color:  #b35933;
+    transition: color 1s;
+  }
   
   .contact-button:hover .contact-menu {
     display: block;
@@ -141,6 +147,7 @@ h1 {
 
 .heading-2 {
     animation: fade-up 1s ease-in;
+    font-size: 30px;
 }
 
 
