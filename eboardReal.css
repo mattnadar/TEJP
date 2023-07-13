@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Global Styles */
+
 * {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
@@ -9,13 +11,7 @@
 
 }
 
-li, a, button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    color: #b35933;
-    text-decoration: none;
-}
+/* Header */
 
 header {
     display: flex;
@@ -36,6 +32,8 @@ header .logo {
         
     }
 }
+
+/* Nav Bar */
 
 .nav_links {
     list-style: none;
@@ -81,6 +79,8 @@ header .logo {
     width: 100%;
 }
 
+/* Button */
+
 button {
     margin: right auto;
     padding: 9px 25px;
@@ -93,6 +93,14 @@ button {
 
 button:hover {
     /*background-color: rgba(92, 126, 99, 0);*/
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #b35933;
+    text-decoration: none;
 }
 
 /* Button Page */
@@ -117,21 +125,25 @@ button:hover {
     display: block;
   }
 
+/* Headings */
 
 h1 {
     color: #b35933;
     text-align: center;
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+    animation: fade-up 1s ease-in;
 
 }
 
+.heading-1 {
+    animation: fade-down 1s ease-in;
+}
 
+.heading-2 {
+    animation: fade-up 1s ease-in;
+}
+
+
+/* Paragraphs */
 
 p {
     /**display: flex;*/
@@ -140,53 +152,7 @@ p {
     margin-top: 20px;
     max-width: 500px;
 }
-
-div.definition {
-    color: rgb(84, 42, 0);
-    margin: auto;
-    width: 50%;
-    margin-top: 30px;
-    padding: 15px;
-    border: 2px solid rgb(84, 42, 0);
-    border-radius: 25px;
-    font-family: "Montserrat", sans-serif;
-    background-color: #9ab28a;
-    display: flex;
-    text-align: center;
-
-    /* animation */
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    
-}
-
-
-
-div.info {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    /**height: 300px;
-    width: 500px; */
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    text-align: center;
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-}
-
+/* Bio Div */
 
 div.bio {
     background-color: #9ab28a;
@@ -214,14 +180,10 @@ div.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+    animation: fade-up 1s ease-in;
 }
+
+/* Body */
 
 body {
     margin: 50px;
@@ -258,25 +220,6 @@ body {
     }
 }
 
-.heading-1 {
-    animation-name: fade-down;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-}
-
-.heading-2 {
-    animation-name: fade-up;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-delay: 0;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-}
 
 /* MEDIA FORMATTING 
 
