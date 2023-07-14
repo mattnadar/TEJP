@@ -183,6 +183,8 @@ div.container {
     flex-wrap: wrap;
     justify-content: center;
     animation: fade-up 1s ease-in;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* KEYFRAMES */
