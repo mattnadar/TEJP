@@ -185,12 +185,6 @@ div.container {
     animation: fade-up 1s ease-in;
 }
 
-/* Body */
-
-body {
-    margin: 50px;
-}
-
 /* KEYFRAMES */
 
 @keyframes fadeIn {
@@ -273,7 +267,6 @@ body {
         text-align: center;
         animation: fade-up 1s ease-in;
         white-space: nowrap; /* Add this line to prevent line break */
-        margin-bottom: 20px; /* Adjust margin-bottom as needed */
     }
     
     .heading-2 {
@@ -297,6 +290,8 @@ body {
         height: 250px;
     }
 
+    div.container{
+    }
     
 
     p {
